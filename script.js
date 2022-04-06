@@ -30,3 +30,14 @@ function repeat(str, numTimes) {
     }
     console.log(result);
 }
+
+
+function isSnakeEyes(firstRoll, secondRoll) {
+    if (firstRoll === 1 && secondRoll === 1) {
+        console.log('Snake Eyes');
+    } else {
+        console.log('Not Snake Eyes')
+    }
+}
+
+isSnakeEyes(1, 1)
