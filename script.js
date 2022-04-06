@@ -41,3 +41,10 @@ function isSnakeEyes(firstRoll, secondRoll) {
 }
 
 isSnakeEyes(1, 1)
+
+// Capitalizing the first letter in a string
+function capitalize(str) {
+    let firstLetter = str[0].toUpperCase();
+    let newWord = firstLetter + str.slice(1);
+    return newWord;
+}
