@@ -57,3 +57,19 @@ function sumArray(nums) {
     }
     return total;
 }
+
+// Returning a given day in the week
+function returnDay(day) {
+    // first we make an array with all the days in the week. We make the first item empty because the index is 0
+    let weekDays = ['', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    // We then cross check to see if the user is entering the correct day between 1 and 7
+    if (day < 1 || day > 7) {
+        return null;
+    }
+    // we then create a loop that runs from 0 to 7
+    for (let i = 0; i < weekDays.length; i++) {
+        // in that loop we run our array and use "day", the user input, to be what searches the loop for the index
+        return weekDays[day];
+    }
+    // YES I'M THAT SMART, I DID THAT!
+}
