@@ -7,3 +7,17 @@ function singSong() {
 
 // After defining a function, this is how you call the function
 singSong();
+
+// adding a parameter to your function
+function greetings(firstName) {
+    console.log(`Good day ${firstName}!`)
+}
+// Adding an argument when calling your function
+greetings('Tavonga');
+
+// Passing multiple parameters
+function introduction(firstName, lastName) {
+    console.log(`Hi, get to know me! I am ${firstName} ${lastName}`);
+}
+// Calling multiple arguments
+introduction('Tavonga', 'Karimanzira')
