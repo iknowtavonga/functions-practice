@@ -73,3 +73,23 @@ function returnDay(day) {
     }
     // YES I'M THAT SMART, I DID THAT!
 }
+
+// HIGHER ORDER FUNCTIONS
+// RETURNING A FUNCTION AS AN ARGUMENT
+
+// THIS FUNCTION WILL CALL THE ARGUMENT TWICE
+function callTwice(func) {
+    func();
+    func();
+}
+
+// this function rolls a dice and generates a number between 1 and 6
+function rollDie() {
+    const roll = Math.floor(Math.random() * 6) + 1;
+    console.log(roll);
+}
+
+/*  when calling a function as an argument 
+    we don't add an argument for the inner function
+*/
+callTwice(rollDie)
