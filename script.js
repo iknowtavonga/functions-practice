@@ -93,3 +93,20 @@ function rollDie() {
     we don't add an argument for the inner function
 */
 callTwice(rollDie)
+
+// RETURNING A FUNCTION
+function makeMysteryFunc() {
+    const rand = Math.random();
+    if (rand > 0.5) {
+        return function () {
+            console.log('CONGRATS, I AM A GOOD ONE');
+            console.log('YOU WIN SOME MONEY I GUESS');
+        }
+    } else {
+        return function () {
+            alert('I AM NOT TO BE FUCKED WITH!');
+            alert('GIVE ME YOUR MONEY NOW!!!!')
+        }
+    }
+}
+
