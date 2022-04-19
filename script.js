@@ -110,3 +110,17 @@ function makeMysteryFunc() {
     }
 }
 
+// This function takes 2 values and puts them in a function that evaluates
+// if the given number is between the 2 values
+
+function makeBetweenFunc(min, max) {
+    return function (num) {
+        return num >= min && num <= max;
+    }
+}
+
+// we will then put this in a variable that compares the 2 numbers
+const isChild = makeBetweenFunc(0, 18);
+
+// we then call the function with a number we'd like to check
+isChild(16);
