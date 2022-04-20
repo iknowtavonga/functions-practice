@@ -124,3 +124,15 @@ const isChild = makeBetweenFunc(0, 18);
 
 // we then call the function with a number we'd like to check
 isChild(16);
+
+
+// DEFINING METHODS (OBJECTS)
+const myMath = {
+    PI: 3.14159,
+    square(num) {
+        return num * num;
+    },
+    cube(num) {
+        return num ** 3;
+    }
+}
