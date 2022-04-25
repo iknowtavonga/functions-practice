@@ -137,6 +137,8 @@ const myMath = {
     }
 }
 
+/* ********************************************************** */
+
 // FUNCTION EXPRESSION (A DIFFERENT WAY TO CALL A FUNCTION)
 const speak = function () {
     console.log('Good Day!')
@@ -148,9 +150,21 @@ const speak = function () {
 speak();
 // function expressions are not hoisted up the script like declarations
 
+/* ********************************************************** */
+
 // ASIGNING DEFAULT PARAMETERS TO FUNCTIONS
 const greet = function (name = 'John', time = 'morning') {
     console.log(`Good ${time} ${name}`);
 }
 
 greet();
+
+/* ********************************************************** */
+
+// RETURNING VALUES
+const calcArea = function (radius) {
+    return 3.14 * radius ** 2;
+};
+
+const area = calcArea(3);
+console.log(area);
