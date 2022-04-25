@@ -168,3 +168,16 @@ const calcArea = function (radius) {
 
 const area = calcArea(3);
 console.log(area);
+
+/* ********************************************************** */
+
+// ARROW FUNCTIONS
+// Arrow functions simplify the way of writing functions
+
+const triArea = (base, height) => (base * 0.5) * height;
+/*  we remove the FUNCTION keyword and just put the parameters 
+    instead of putting curly braces, we put the 'arrow'
+    we don't have to put the 'RETURN' keyword... we can just do calculations
+*/
+const triangle = triArea(4, 5);
+console.log(triangle)
