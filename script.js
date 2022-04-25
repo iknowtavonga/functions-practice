@@ -136,3 +136,15 @@ const myMath = {
         return num ** 3;
     }
 }
+
+// FUNCTION EXPRESSION (A DIFFERENT WAY TO CALL A FUNCTION)
+const speak = function () {
+    console.log('Good Day!')
+};
+
+// on a function expression, you should put the ; after the expression
+// You call the function expression, the same way you call a normal function
+
+speak();
+
+// function expressions are not hoisted up the script like declarations
