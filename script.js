@@ -146,5 +146,11 @@ const speak = function () {
 // You call the function expression, the same way you call a normal function
 
 speak();
-
 // function expressions are not hoisted up the script like declarations
+
+// ASIGNING DEFAULT PARAMETERS TO FUNCTIONS
+const greet = function (name = 'John', time = 'morning') {
+    console.log(`Good ${time} ${name}`);
+}
+
+greet();
