@@ -181,3 +181,18 @@ const triArea = (base, height) => (base * 0.5) * height;
 */
 const triangle = triArea(4, 5);
 console.log(triangle)
+
+/****************************************************************/
+// CALLBACKS
+/* SET TIMEOUT ALLOWS YOU TO DELAY A PARTICULAR BLOCK OF CODE FROM RUNNING
+FOR A SET INTERVAL OF TIME */
+
+console.log('Hello good sir');
+setTimeout(() => {
+    console.log('... are you still there?')
+}, 3000)
+
+// Set Interval will constantly run the code after the given number of seconds
+/* const id = setInterval(() =>{
+    console.log(Math.random())
+},2000)*/
